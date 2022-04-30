@@ -14,7 +14,8 @@ proje-onerisi-ymg-oyuntasarimirenkdegistirme created by GitHub Classroom
 * Oyun motoru olarak Unity kullanacağız ,  oyun c# dili ile Visual Studio  da yazılacaktır
 #### Oyun içi tahmini görseller
 
-![Octocat][img2] ![Octocat][img1]
+
+![RenkliTopOyunu1](https://user-images.githubusercontent.com/42507516/166102581-62b0c6be-72d6-4e7c-b27c-2cd1eb2f4e58.png)
 
 
 [img1]:https://cdn.kiz10.com/upload/thumbnails/1462480466_color-switch.png
