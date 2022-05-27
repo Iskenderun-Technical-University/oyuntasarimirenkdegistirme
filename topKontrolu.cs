@@ -14,7 +14,8 @@ public class topKontrolu : MonoBehaviour
     public GameObject[] daireler;
     public GameObject renkTekeri;
     void Start()
-    {
+    {   
+        PlayerPrefs.SetInt("yuksekpuan", skor);
         skoryazisi.text = skor.ToString();
         topunRengi = GetComponent<SpriteRenderer>().color;
         randomRenk();
@@ -28,11 +29,11 @@ public class topKontrolu : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.up * ziplamaKuvveti;        }
 
-        //skoryazisi.text = "SKOR: " + skor.ToString();
-        //if (skor > PlayerPrefs.GetInt("yuksekpuan"))
-        //{
-        //    PlayerPrefs.SetInt("yuksekpuan", skor);
-        //}
+          skoryazisi.text = "SKOR: " + skor.ToString();
+          if (skor > PlayerPrefs.GetInt("yuksekpuan"))
+          {
+           PlayerPrefs.SetInt("yuksekpuan", skor);
+           }
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -62,7 +63,7 @@ public class topKontrolu : MonoBehaviour
             Debug.Log("Oyun bitti..");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             // Destroy(gameObject);
-            Debug.Log("Oyun tekrar baþladý");
+            Debug.Log("Oyun tekrar baÃ¾ladÃ½");
 
         }
 
